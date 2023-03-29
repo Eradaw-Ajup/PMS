@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 12, 2016 12:24:29 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="gov.nist.csd.pm.pap.model.MNode" table="node">
+        <id name="IDD" type="long">
+            <column name="node_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="NAME" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="TYPE" type="long">
+            <column name="node_type_id" />
+        </property>
+        <property name="PROPERTIES" type="java.lang.String">
+            <column name="node_property" />
+        </property>
+        <property name="owner" type="java.lang.String">
+            <column name="owner" />
+        </property>
+        <property name="policyID" type="long">
+            <column name="policy_id" />
+        </property>
+        <property name="storeType" type="java.lang.String">
+            <column name="node_status" />
+        </property>
+        <property name="isNodeActive" type="boolean">
+            <column name="is_node_active" />
+        </property>
+        <property name="attributeID" type="long">
+            <column name="attribute_id" />
+        </property>
+        <property name="authorityID" type="long">
+            <column name="authority_id" />
+        </property>
+    </class>
+</hibernate-mapping>
